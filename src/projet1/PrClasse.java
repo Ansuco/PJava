@@ -10,6 +10,13 @@ public class PrClasse {
 		String arrayToi[] = {"Tu as ", " ans"};
 		int age = 18;
 		System.out.println(arrayToi[0] + age + arrayToi[1]);
+		
+		for(String you : arrayToi) {
+			if (you == " ans") {
+				System.out.print(age);	
+			}
+			System.out.print(you);
+		}
 
 	}
 
