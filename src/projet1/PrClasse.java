@@ -7,7 +7,7 @@ public class PrClasse {
 
 	public static void main(String[] args) {
 
-		final int MONTH31 = 31;
+		final int MONTH31 = 31; // Declare constant with keyword final
 		final int MONTH30 = 30;
 
 		//Date Builder with multiple array
@@ -18,8 +18,8 @@ public class PrClasse {
 		
 		Scanner sc = new Scanner(System.in);
 		int month = 0;
-		String reponse = "";
-		
+		String reponse = ""; // it will get the value from user's reply
+		//do while loop
 		do {
 			System.out.print("Entrez quelque nombre [1-365] : ");
 			int nJours = sc.nextInt();
@@ -40,13 +40,13 @@ public class PrClasse {
 			
 			System.out.println("Résultat : " + dateBuilder[0][month]);
 			
-			System.out.print("Voulez-vous recommencer ? [On] ");
+			System.out.print("Voulez-vous recommencer ? [On] "); //question boolean default yes
 			sc.nextLine();
-			reponse = sc.nextLine();
+			reponse = sc.nextLine(); //look for user's reply
 			
-		} while (!reponse.equals("n"));
+		} while (!reponse.equals("n")); //if reply is other than letter "n", the code is re-launched
 		
-		System.out.println("Aurevoir");
+		System.out.println("Aurevoir"); // message if reply is "n".
 		sc.close();
 
 		
