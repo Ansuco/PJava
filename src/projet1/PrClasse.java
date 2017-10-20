@@ -1,6 +1,7 @@
 package projet1;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class PrClasse {
 
@@ -15,8 +16,19 @@ public class PrClasse {
 			if (you == " ans") {
 				System.out.print(age);	
 			}
-			System.out.print(you);
+			System.out.println(you);
 		}
+		
+		// La condition ternaire
+		
+		Scanner sc = new Scanner(System.in);
+		age = sc.nextInt();
+		String reply = (3 < age) ? (age >= 18) ? "adult": "enfant" : "bébé";
+		System.out.println(reply);
+		
+	
+		
+		
 
 	}
 
