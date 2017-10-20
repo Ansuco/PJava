@@ -28,8 +28,42 @@ public class PrClasse {
 		
 	
 		
+		String dateBuilder[][] = {
+				{"janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "decembre"},
+				{"lundi","mardi","mecredi", "jeudi", "vendredi", "samedi","dimanche"}
+		};
 		
-
+		int nJours = sc.nextInt();
+		
+			if (nJours <= 31) {
+				System.out.println(dateBuilder[0][0]);
+			}else if (nJours <= 31+30) {
+				System.out.println(dateBuilder[0][1]);
+			}else if (nJours <= 31+30+30) {
+				System.out.println(dateBuilder[0][2]);
+			}else if (nJours <= 31+30+30+30) {
+				System.out.println(dateBuilder[0][3]);
+			}else if (nJours <= 31+30+30+30+30) {
+				System.out.println(dateBuilder[0][4]);
+			}else if (nJours <= 31+30+30+30+30+30) {
+				System.out.println(dateBuilder[0][5]);
+			}else if (nJours <= 31+30+30+30+30+30+30) {
+				System.out.println(dateBuilder[0][6]);
+			}else if (nJours <= 31+30+30+30+30+30+30+30) {
+				System.out.println(dateBuilder[0][7]);
+			}else if (nJours <= 31+30+30+30+30+30+30+30+30) {
+				System.out.println(dateBuilder[0][8]);
+			}else if (nJours <= 31+30+30+30+30+30+30+30+30+30) {
+				System.out.println(dateBuilder[0][9]);
+			}else if (nJours <= 31+30+30+30+30+30+30+30+30+30+30) {
+				System.out.println(dateBuilder[0][10]);
+			}else if (nJours <= 31+30+30+30+30+30+30+30+30+30+30+30) {
+				System.out.println(dateBuilder[0][11]);
+			}else if (nJours <= 31+30+30+30+30+30+30+30+30+30+30+30+30) {
+				System.out.println(dateBuilder[0][12]);
+			}
+				
+			
+		
 	}
-
 }
